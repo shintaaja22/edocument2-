@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita ESIGN Balikpapan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigasi utama -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html#home">
+                <img src="assets/img/logo_kota.png" alt="Logo Kota" style="height:40px;">
+                E-Sign
+            </a>
+            <div class="d-flex gap-2 ms-auto">
+                <a href="index.html#about" class="btn btn-nav">Tentang</a>
+                <a href="index.html#form" class="btn btn-nav">Formulir</a>
+                <a href="index.html#data" class="btn btn-nav">Data</a>
+                <a href="berita.html" class="btn btn-nav active">Berita</a>
+                <a href="index.html#faq" class="btn btn-nav">Bantuan</a>
+            </div>
+        </div>
+    </nav>
+    <style>
+        :root {
+            --primary: #00e5ff;
+            --dark: #0d1b2a;
+            --bg: #1b263b;
+        }
+
+        html {
+            scroll-padding-top: 100px;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-color: var(--bg);
+            color: #fff;
+        }
+
+        nav.navbar {
+            background-color: var(--dark);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1050;
+        }
+
+        .navbar-brand {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .btn-nav {
+            font-weight: 500;
+            border-radius: 30px;
+            padding: 6px 18px;
+            color: #fff;
+            background-color: transparent;
+            border: 1px solid var(--primary);
+            transition: 0.3s;
+        }
+
+        .btn-nav:hover {
+            background-color: var(--primary);
+            color: #000;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #003049, #1b263b);
+            text-align: center;
+            padding: 0;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 4rem;
+            color: var(--primary);
+            text-shadow: 0 0 10px var(--primary);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: #ccc;
+            max-width: 700px;
+            margin: 20px auto;
+        }
+
+        .section-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.2rem;
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .form-section,
+        .about-section,
+        .contact-section,
+        .faq-section {
+            padding: 100px 20px;
+            background-color: #0d1b2a;
+        }
+
+        .about-section {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        #form {
+            margin-top: 100px;
+        }
+
+        .form-control,
+        select,
+        textarea {
+            background-color: #1b263b;
+            border: 1px solid #344966;
+            color: #fff;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 0.25rem rgba(0, 229, 255, 0.25);
+            background-color: #0d1b2a;
+            color: #fff;
+        }
+
+        canvas {
+            background: #fff;
+            border: 2px dashed #ccc;
+            border-radius: 10px;
+            width: 100%;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #0d1b2a;
+            color: #bbb;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 80px;
+        }
+
+        .alert {
+            margin-top: 20px;
+        }
+    </style>
+    <!-- Section Berita -->
+    <section class="form-section" id="berita">
+        <div class="container">
+            <h2 class="section-title">Berita</h2>
+            <div class="row">
+                <!-- Berita 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm bg-dark text-light border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Peluncuran Sistem E-Sign Balikpapan</h5>
+                            <p class="card-text">
+                                Pemerintah Kota Balikpapan resmi meluncurkan sistem tanda tangan elektronik (E-Sign)
+                                untuk mempercepat proses administrasi dan digitalisasi dokumen. Acara peluncuran
+                                dihadiri oleh pejabat daerah dan mitra kerja.
+                            </p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <i class="bi bi-calendar-event"></i> 15 Juli 2025
+                        </div>
+                    </div>
+                </div>
+                <!-- Berita 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm bg-dark text-light border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Sosialisasi Penggunaan Tanda Tangan Digital</h5>
+                            <p class="card-text">
+                                Dinas Kominfo Balikpapan mengadakan sosialisasi penggunaan tanda tangan digital kepada
+                                seluruh pegawai dan mitra. Tujuannya agar proses birokrasi menjadi lebih efisien dan
+                                aman.
+                            </p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <i class="bi bi-calendar-event"></i> 20 Juli 2025
+                        </div>
+                    </div>
+                </div>
+                <!-- Berita 3 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm bg-dark text-light border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Integrasi E-Sign dengan Layanan Publik</h5>
+                            <p class="card-text">
+                                Sistem E-Sign kini terintegrasi dengan beberapa layanan publik di Balikpapan, seperti
+                                pengajuan surat tugas dan surat keputusan secara online.
+                            </p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <i class="bi bi-calendar-event"></i> 25 Juli 2025
+                        </div>
+                    </div>
+                </div>
+                <!-- Berita 4 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm bg-dark text-light border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Keamanan Data Tanda Tangan Elektronik</h5>
+                            <p class="card-text">
+                                Pemerintah Kota Balikpapan memastikan keamanan data pengguna E-Sign dengan teknologi
+                                enkripsi dan sertifikasi digital sesuai standar nasional.
+                            </p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <i class="bi bi-calendar-event"></i> 28 Juli 2025
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 ESIGN Balikpapan. Seluruh hak cipta dilindungi.
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
