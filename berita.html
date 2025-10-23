@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apakah Tanda Tangan Digital Sah di Mata Hukum? | ESIGN Balikpapan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00bcd4;
+      --dark: #0d1b2a;
+      --bg-light: #f8f9fa;
+      --text-dark: #212529;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav.navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .navbar-brand {
+      font-family: 'Orbitron', sans-serif;
+      color: var(--primary) !important;
+      font-weight: bold;
+    }
+
+    .btn-nav {
+      border-radius: 30px;
+      border: 1px solid var(--primary);
+      color: var(--dark);
+      padding: 6px 16px;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    .btn-nav:hover, .btn-nav.active {
+      background-color: var(--primary);
+      color: #fff;
+    }
+
+    /* Hero Berita (tanpa judul) */
+    .hero-berita {
+      position: relative;
+      background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.8)),
+        url('assets/img/berita-hukum.jpg') center/cover no-repeat;
+      height: 30vh; /* dikurangi agar tidak terlalu tinggi */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    /* Konten Berita */
+    .news-content {
+      padding: 40px 20px 60px;
+      margin-top: -60px; /* menaikkan bagian berita */
+      position: relative;
+      z-index: 2;
+    }
+
+    .news-article {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    .news-article img {
+      border-radius: 12px;
+      margin: 20px 0;
+      width: 100%;
+    }
+
+    .news-article h2 {
+      color: var(--primary);
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+    }
+
+    .news-article p {
+      line-height: 1.8;
+      color: #444;
+      margin-bottom: 1.2rem;
+      font-size: 1rem;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      height: fit-content;
+    }
+
+    .sidebar h3 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.4rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .related-news a {
+      display: block;
+      color: #212529;
+      text-decoration: none;
+      margin-bottom: 15px;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    .related-news a:hover {
+      color: var(--primary);
+      transform: translateX(5px);
+    }
+
+    footer {
+      background-color: #ffffff;
+      color: #666;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 60px;
+      font-size: 0.9rem;
+      border-top: 1px solid #ddd;
+    }
+
+    @media (max-width: 768px) {
+      .news-content {
+        margin-top: -40px;
+      }
+      .news-article, .sidebar {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="assets/img/logo_kota.png" alt="Logo" style="height:40px;">
+        E-Sign
+      </a>
+      <div class="d-flex gap-2 ms-auto">
+        <a href="index.html#home" class="btn btn-nav">Home</a>
+        <a href="index.html#about" class="btn btn-nav">Tentang</a>
+        <a href="index.html#form" class="btn btn-nav">Formulir</a>
+        <a href="index.html#data" class="btn btn-nav">Data</a>
+        <a href="berita.html" class="btn btn-nav active">Berita</a>
+        <a href="index.html#faq" class="btn btn-nav">Bantuan</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero tanpa judul -->
+  <section class="hero-berita"></section>
+
+  <!-- Konten Berita -->
+  <section class="news-content">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <div class="news-article">
+            <img src="assets/img/tte2.png" alt="Tanda Tangan Digital">
+            
+            <h2>Pengenalan</h2>
+            <p>
+              Tanda tangan elektronik (TTE) adalah tanda tangan yang terdiri dari informasi elektronik yang dilekatkan pada informasi elektronik lain untuk memverifikasi dan mengotentikasi identitas pengirim serta memastikan integritas dokumen. Secara hukum, TTE memiliki kekuatan yang sama dengan tanda tangan manual, asalkan memenuhi persyaratan tertentu yang ditetapkan dalam undang-undang seperti UU ITE. Penggunaan TTE dapat mempercepat transaksi dan lebih ramah lingkungan karena mengurangi penggunaan kertas.
+            </p>
+
+            <h2>Landasan Hukum</h2>
+            <p>
+              Berdasarkan Undang-Undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik (UU ITE) serta 
+              Peraturan Pemerintah Nomor 71 Tahun 2019, tanda tangan elektronik memiliki kekuatan hukum yang sah dan diakui secara resmi di Indonesia.
+            </p>
+
+            <h2>Keamanan dan Validitas</h2>
+            <p>
+              Tanda tangan elektronik tersertifikasi menggunakan teknologi enkripsi dan sertifikat digital untuk memastikan keaslian serta integritas dokumen.
+              Dengan demikian, setiap dokumen yang ditandatangani secara elektronik dapat diverifikasi kebenarannya.
+            </p>
+
+            <h2>Kesimpulan</h2>
+            <p>
+              Penggunaan tanda tangan digital bukan hanya efisien, tetapi juga sah di mata hukum. 
+              Dengan platform seperti <strong>ESIGN Balikpapan</strong>, proses administrasi pemerintahan menjadi lebih cepat, aman, dan transparan.
+            </p>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+<div class="col-lg-4">
+  <div class="sidebar">
+    <h3>Berita Terkait</h3>
+    <div class="related-news">
+      <a href="berita3.html" target="_blank" rel="noopener noreferrer">
+          Cara Membuat Tanda Tangan Digital dengan Mudah
+      </a>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 ESIGN Balikpapan. Seluruh hak cipta dilindungi.
+  </footer>
+</body>
+</html>
